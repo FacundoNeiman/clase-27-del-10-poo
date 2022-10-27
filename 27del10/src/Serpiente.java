@@ -1,22 +1,31 @@
 
-public class   Serpiente extends Animal{
-
-	public Serpiente(String nombre, String color) {
+public class Serpiente extends Animal{
+	
+	private String veneno;
+	
+	public Serpiente(String nombre, String color, String veneno) {
 		super(nombre, color);
-		// TODO Auto-generated constructor stub
+		this.veneno = veneno;
 	}
 
-	private String veneno;
+
+
+	@Override
+	public String toString() {
+		return "Serpiente [veneno=" + veneno + ", getNombre()=" + getNombre() + ", getColor()=" + getColor() + "]";
+	}
+
+
 
 	@Override
 	public void hacerSonido() {
-		// TODO Auto-generated method stub
+	System.out.println("SZSZSZSZZZS");
 		
 	}
 
 	@Override
 	public void caminar() {
-		// TODO Auto-generated method stub
+		System.out.println("Me arrastro");
 		
 	}
 
